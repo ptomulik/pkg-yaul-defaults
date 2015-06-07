@@ -1,3 +1,5 @@
+yaul-defaults (0.1.1) unstable; urgency=low
+
   * Initial upload.  Defaults are set to Yaul 0.1.1.
 
  -- Paweł Tomulik <ptomulik@meil.pw.edu.pl>  Sun, 07 Jun 2015 11:54:09 +0200
