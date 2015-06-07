@@ -1,0 +1,52 @@
+Source: yaul-defaults
+Homepage: https://github.com/ptomulik/yaul
+Section: libs
+Priority: optional
+Maintainer: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
+Uploaders: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
+Build-Depends: debhelper (>= 9), libyaul0.1-dev (>= 0.1.1)
+Standards-Version: 3.9.5
+
+Package: libyaul-dbg
+Architecture: any
+Multi-Arch: same
+Section: debug
+Priority: extra
+Depends: libyaul-dev (= ${binary:Version}), ${misc:Depends}, libyaul0.1-dbg
+Description: Yaul C++ Libraries with debug symbols (default version)
+ This package forms part of the Yaul C++ Libraries collection.
+ .
+ These libraries are built with debug symbols. They are useful to debug
+ programs which use Yaul. These must be used also at build/link time.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Yaul version (currently 0.1).
+
+Package: libyaul-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: ${misc:Depends}, libyaul0.1-dev
+Suggests: libyaul-doc
+Description: Yaul C++ Libraries development files (default version)
+ Certain functionalities contained in Boost libraries are reimplemented here
+ using modern C++ standards (c++11 and later).
+ .
+ This package provides headers for all Yaul libraries.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Yaul version (currently 0.1).
+
+Package: libyaul-doc
+Homepage: https://github.com/ptomulik/yaul
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}, libyaul0.1-doc
+Description: Documentation for Yaul libraries (default version)
+ Certain functionalities contained in Boost libraries are reimplemented in Yaul
+ using modern C++ standards (c++11 and later).
+ .
+ We have no docs packaged for Debian so far.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Yaul version (currently 0.1).
